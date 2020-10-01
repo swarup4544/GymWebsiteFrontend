@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+
+    <style>
+        #logo{
+            text-align: center;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url('img/girl.jpg');
+            background-repeat: no-repeat;
+            height: 1100px;
+            color: white;
+            font-family: 'Squada One', cursive;
+            font-size: large;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+        
+        .left div{
+            line-height: 18px;
+            font-size: larger;
+        }
+
+        .left img {
+            width: 60px;
+            /* background-color: greenyellow;*/
+            padding-left: 19px;
+            padding-right: 19px;
+            filter: invert(100%);
+        }
+       
+
+        .mid {
+            border: 2px solid rgb(217, 238, 32);
+            width: 31%;
+            margin: 20px auto;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 20px;     
+        }
+
+        .navbar {
+            display: block;
+            margin: 0%;
+            padding: 2px;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding: 20px 30px;
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+
+        .navbar li a.active,
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: greenyellow;
+        }
+        .btn{
+            /* border: 2px solid red; */
+            margin: 0px 4px;
+            border-radius: 8px;
+            background-color: black;
+            color: greenyellow;
+            padding: 6px;
+            cursor:pointer;
+            /* font-family: 'Baloo Bhai 2', cursive; */
+            font-family: 'Squada One', cursive;
+        }
+        .btn:hover{
+            background-color: rgb(66, 70, 70);  
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .container{
+            margin: 86px 55px;
+            border:2px solid white;
+            border-radius: 10px;
+            width: 33%;
+            padding:70px;
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width:325px;
+            border: 2px solid grey;
+            margin: 7px auto;
+            border-radius: 10px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 15px;
+        }
+        .container h2{
+            text-align: center;
+        }
+        .container button{
+           display: block;
+           width: 120px;
+           margin: 20px auto;
+           font-size: large;
+        
+        } 
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Left box styling -->
+        <div class="left">
+            <img src="/img/logo.png" alt="">
+            <div id="logo" >Fitness Freak</div>
+        </div>
+        <!-- Navigation Bar styling -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home </a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- Buttons on right side -->
+        <div class="right">
+            <button class="btn">
+                Membership
+            </button>
+            <button class="btn">
+                Call Now
+            </button>
+        </div>
+    </header>
+    <div class="container">
+            <h2 >Join Fitness Freak's Best <u>GYM </u>  in your Area</h2>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text"name="" placeholder="Enter Your Name" >
+                </div>
+                <div class="form-group">
+                    <input type="text"name="" placeholder="Enter Your Gender" >
+                </div>
+                <div class="form-group">
+                    <input type="number"name="" placeholder="Enter Your Age" >
+                </div>
+                <div class="form-group">
+                    <input type="number"name="" placeholder="Enter Your Weight" >
+                </div>
+                <div class="form-group">
+                    <input type="text"name="" placeholder="Enter Your Locality" >
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+    </div>
+</body>
+
+</html>
